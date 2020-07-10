@@ -2,12 +2,12 @@ class CLI
 
   def start
     puts "Welcome to the ultimate Superhero App!"
-    ask_superhero
+    ask_for_superhero
     goodbye
   end
 
-  def ask_superhero
-    puts "Enter the number of the superhero you'd like to learn more about."
+  def ask_for_superhero
+    puts "Enter the name of a superhero you'd like to learn more about."
     input = gets.strip
     hero = valid_input(input)
 
