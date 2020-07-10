@@ -29,3 +29,9 @@ End
 Puts “Enter the name of a superhero you’d like to see stats of” 
 Input = gets.strip
 
+User is asked for a superhero 
+User enters superhero name
+User is returned API information for that superhero 
+
+
+
