@@ -5,7 +5,7 @@ require "superhero_cli/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "superhero_cli"
-  spec.version       = SuperheroClI::VERSION
+  spec.version       = SuperheroCLI::VERSION
   spec.authors       = ["'Shelby Hopkins'"]
   spec.email         = ["'shelby.hopkins171@gmail.com'"]
 
