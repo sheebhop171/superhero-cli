@@ -6,6 +6,7 @@ class Scraper
   end
 
   def fetch_data
+    binding.pry
     url = https://superheroapi.com/api/10218887433359734/#{id}
 
     response = HTTParty.get(url)
