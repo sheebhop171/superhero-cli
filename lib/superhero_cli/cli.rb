@@ -20,7 +20,7 @@ class SuperheroCLI::CLI
   end
   
   def get_user_input
-    @input = gets.strip
+    @input = gets.strip.to_i
   end
   
   def goodbye
