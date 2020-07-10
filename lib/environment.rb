@@ -1,6 +1,8 @@
-require "superhero_cli/version"
+require_relative "./superhero_cli/version"
 
-module SuperheroClI
+
+
+module SuperheroCli
   class Error < StandardError; end
   # Your code goes here...
 end

@@ -1,3 +1,3 @@
-module SuperheroClI
+module SuperheroCli
   VERSION = "0.1.0"
 end
