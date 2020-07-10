@@ -1,11 +1,11 @@
-class Scraper
+class SuperheroCLI::API
 
   def initialize(hero)
     @hero = hero
     @key = key #input API key here
   end
 
-  def fetch_data
+  def self.get_superheroes
     binding.pry
     url = https://superheroapi.com/api/10218887433359734/#{id}
 

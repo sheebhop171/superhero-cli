@@ -1,0 +1,3 @@
+class SuperheroCLI::Superhero
+  
+end
