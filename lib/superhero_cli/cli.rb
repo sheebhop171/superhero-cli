@@ -1,9 +1,14 @@
 class SuperheroCLI::CLI
+  
+  attr_accessor :input
 
   def start
     puts "Welcome to the ultimate Superhero App!"
     while @input != "exit"
+   # binding.pry
     ask_for_superhero
+    api = SuperheroCLI::API.new(input)
+    api.get_superheroes
     end 
     goodbye
   end

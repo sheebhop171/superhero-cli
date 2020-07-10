@@ -1,13 +1,15 @@
 class SuperheroCLI::API
+  
+  attr_accessor :input
 
   def initialize(input)
-    @hero = hero
-    @key = key #input API key here
+    @input = input
+   # @key = key #input API key here
   end
 
-  def self.get_superheroes
+  def get_superheroes
     binding.pry
-    url = https://superheroapi.com/api/10218887433359734/#{id}
+    url = "https://superheroapi.com/api/10218887433359734/#{input}"
 
     response = HTTParty.get(url)
 
