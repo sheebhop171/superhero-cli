@@ -13,13 +13,7 @@ class SuperheroCLI::CLI
     get_user_input
     #hero = valid_input(input)
   end
-
-# def valid_input(input)
-#    if input < 0 || input > 25
-#     puts "Please enter a number between 1 and 25."
-#    end
-#  end
-
+  
   def get_user_input
     @input = gets.strip
   end

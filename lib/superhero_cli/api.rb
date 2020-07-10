@@ -1,6 +1,6 @@
 class SuperheroCLI::API
 
-  def initialize(hero)
+  def initialize(input)
     @hero = hero
     @key = key #input API key here
   end
@@ -12,10 +12,6 @@ class SuperheroCLI::API
     response = HTTParty.get(url)
 
 
-  end
-
-  def goodbye
-    puts "Thanks for checking out our superheroes!"
-  end
+end
 
 end
