@@ -1,4 +1,4 @@
-class SuperheroCli::CLI
+class SuperheroClI::CLI
 
   def start
     puts "Welcome to the ultimate Superhero App!"

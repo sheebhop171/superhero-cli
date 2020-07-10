@@ -2,7 +2,7 @@ require_relative "./superhero_cli/version"
 
 
 
-module SuperheroCli
+module SuperheroClI
   class Error < StandardError; end
   # Your code goes here...
 end
