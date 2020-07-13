@@ -4,6 +4,7 @@ require_relative "./superhero_cli/api"
 
 require 'pry'
 require 'httparty'
+require 'json'
 
 
 
