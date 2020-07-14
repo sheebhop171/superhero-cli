@@ -7,9 +7,6 @@ class SuperheroCLI::CLI
     while @input != "exit"
     
     superheroes_list 
-    
-    binding.pry 
-    
     get_user_input
     api = SuperheroCLI::API.new(input)
     
@@ -21,7 +18,6 @@ class SuperheroCLI::CLI
   
    def superheroes_list
     puts "Enter the name of the superhero you'd like to learn more about."
-    
     @superheroes = ["Aquaman", "Deadpool", "Hulk", "Phoenix", "Storm"]
     @superheroes.each.with_index(1) do |name, index|
       puts "#{index}. #{name}"
