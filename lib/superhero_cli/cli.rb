@@ -16,16 +16,16 @@ class SuperheroCLI::CLI
   end
   
    def superheroes_list
-    # pick random assortment of superheros to display 
-    @superheroes = ["Batman", "Spider-Man", "Joker", "Wonder Woman"]
+    # code superhero options to display  
+    @superheroes = ["Aquaman", "Black Widow", "Captain America", "Deadpool", "Hulk", "Iron Man", "Storm", "Wonder Woman"]
     binding.pry 
-    @superheroes.each_with_index do |index, name|
-      puts "#{index}: #{name}"
+    @superheroes.each.with_index(1) do |name, index|
+      puts "#{index}. #{name}"
     end
   end 
 
   def ask_for_superhero
-    puts "Enter the name of a superhero you'd like to learn more about."
+    puts "Enter the name of the superhero you'd like to learn more about."
     @input = gets.strip 
   end
   
