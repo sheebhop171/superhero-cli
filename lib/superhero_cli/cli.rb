@@ -5,11 +5,11 @@ class SuperheroCLI::CLI
   def start
     puts "Welcome to the ultimate Superhero App!"
     while @input != "exit"
-    superheroes_list 
-    api = SuperheroCLI::API.new(input)
-    api.get_superheroes 
-    api.list_attributes
-    sleep(5)
+      superheroes_list 
+      api = SuperheroCLI::API.new(input)
+      api.get_superheroes 
+      api.list_attributes
+      sleep(5)
     end 
     goodbye
   end

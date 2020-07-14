@@ -1,6 +1,6 @@
 class SuperheroCLI::API
   
-  attr_accessor :input
+  attr_accessor :input, :name, :powerstats, :full_name, :alter_egos, :place_of_birth, :occupation
 
   def initialize(input)
     @input = input
