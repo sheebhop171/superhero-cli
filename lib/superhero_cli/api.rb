@@ -21,7 +21,7 @@ class SuperheroCLI::API
     
   end 
     
-    def list_attributes 
+  def list_attributes 
     puts "Name: #{@name}"
     puts "Full Name: #{@full_name}"
     puts "Alter Egos: #{@alter_egos}"
@@ -29,7 +29,7 @@ class SuperheroCLI::API
     puts "Occupation: #{@occupation}"
     @powerstats.each do |stat| 
     puts "#{stat}" 
-      end
+    end
     puts 
   end
 
