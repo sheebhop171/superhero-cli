@@ -8,12 +8,12 @@ class SuperheroCLI::API
   end
 
   def get_superheroes
-     binding.pry
+  #   binding.pry
     url = "https://superheroapi.com/api/10218887433359734/search/#{input}"
     response = HTTParty.get(url)
     superhero = response["results"]
     superhero_name = superhero[0]["name"]
-    
+    binding.pry
 
 
 end

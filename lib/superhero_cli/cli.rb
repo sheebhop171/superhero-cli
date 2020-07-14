@@ -5,7 +5,6 @@ class SuperheroCLI::CLI
   def start
     puts "Welcome to the ultimate Superhero App!"
     while @input != "exit"
-   binding.pry
     ask_for_superhero
     api = SuperheroCLI::API.new(input)
     api.get_superheroes
