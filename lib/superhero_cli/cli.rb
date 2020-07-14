@@ -9,13 +9,13 @@ class SuperheroCLI::CLI
     api = SuperheroCLI::API.new(input)
     api.get_superheroes 
     #list superhero information 
-    
+    sleep(3)
     end 
     goodbye
   end
   
    def superheroes_list
-    puts "Enter the name of the superhero you'd like to learn more about."
+    puts "Enter the name of the superhero you'd like to learn more about or enter 'exit'."
     @superheroes = ["Aquaman", "Deadpool", "Hulk", "Phoenix", "Storm"]
     @superheroes.each.with_index(1) do |name, index|
       puts "#{index}. #{name}"
