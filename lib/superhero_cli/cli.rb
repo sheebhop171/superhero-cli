@@ -8,8 +8,8 @@ class SuperheroCLI::CLI
     superheroes_list 
     api = SuperheroCLI::API.new(input)
     api.get_superheroes 
-    #list superhero information 
-    sleep(3)
+    api.list_attributes
+    sleep(5)
     end 
     goodbye
   end
@@ -22,10 +22,6 @@ class SuperheroCLI::CLI
     end
     @input = gets.strip 
   end 
-
-  #def get_user_input
-   
-  #end
   
   def goodbye
    puts "Thank you for visiting the Superhero App!"
