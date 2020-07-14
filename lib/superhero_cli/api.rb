@@ -14,9 +14,9 @@ class SuperheroCLI::API
     superhero = response["results"]
     superhero_name = superhero[0]["name"]
     binding.pry
-
-
-end
+    superhero.each_with_index { |index, name|
+      puts "#{index}: #{name}" }
+  end
 
 end
 
