@@ -11,7 +11,9 @@ class SuperheroCLI::API
      binding.pry
     url = "https://superheroapi.com/api/10218887433359734/search/#{input}"
     response = HTTParty.get(url)
-    response_data = JSON.parse response
+    superhero = response["results"]
+    superhero_name = superhero[0]["name"]
+    
 
 
 end
