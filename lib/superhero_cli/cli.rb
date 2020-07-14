@@ -5,9 +5,9 @@ class SuperheroCLI::CLI
   def start
     puts "Welcome to the ultimate Superhero App!"
     while @input != "exit"
-    
+    binding.pry
     superheroes_list 
-    get_user_input
+    #get_user_input
     api = SuperheroCLI::API.new(input)
     
     #list superhero information 
@@ -22,11 +22,12 @@ class SuperheroCLI::CLI
     @superheroes.each.with_index(1) do |name, index|
       puts "#{index}. #{name}"
     end
+    @input = gets.strip 
   end 
 
-  def get_user_input
-   @input = gets.strip 
-  end
+  #def get_user_input
+   
+  #end
   
   def goodbye
    puts "Thank you for visiting the Superhero App!"
