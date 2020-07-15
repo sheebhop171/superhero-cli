@@ -16,7 +16,7 @@ class SuperheroCLI::CLI
   
    def superheroes_list
     puts "Enter the name of the superhero you'd like to learn more about or enter 'exit'."
-    @superheroes = ["Aquaman", "Deadpool", "Hulk", "Phoenix", "Storm"]
+    @superheroes = ["Aquaman", "Batgirl", "Batman", "Deadpool", "Hulk", "Mystique", "Phoenix", "Spider-Man", "Storm", "Thor", ]
     @superheroes.each.with_index(1) do |name, index|
       puts "#{index}. #{name}"
     end

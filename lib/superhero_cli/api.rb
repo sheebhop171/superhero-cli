@@ -22,6 +22,7 @@ class SuperheroCLI::API
   end 
     
   def list_attributes 
+    puts "-----------Superhero Info-----------"
     puts "Name: #{@name}"
     puts "Full Name: #{@full_name}"
     puts "Alter Egos: #{@alter_egos}"
