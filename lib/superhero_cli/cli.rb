@@ -4,14 +4,23 @@ class SuperheroCLI::CLI
 
   def start
     puts "Welcome to the ultimate Superhero App!"
-    while @input != "exit"
+    if @input != "exit"
       superheroes_list 
       api = SuperheroCLI::API.new(input)
       api.get_superheroes 
       api.list_attributes
-      sleep(5)
+      
+    puts "Would you like to see another superhero? (y/n)"
+      input = gets.strip.downcase
+      if input == "y"
+        start
+      elsif input == "n"
+        goodbye 
+      else
+        puts "I don't understand that answer. Please enter 'y', 'n', or 'exit."
+        input - gets.strip.downcase
+      end
     end 
-    goodbye
   end
   
    def superheroes_list

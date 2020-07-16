@@ -1,9 +1,12 @@
 class SuperheroCLI::API
   
   attr_accessor :input, :name, :powerstats, :full_name, :alter_egos, :place_of_birth, :occupation
+  
+  @@all = []
 
   def initialize(input)
     @input = input
+    @@all << self
   end
 
   def get_superheroes
@@ -33,6 +36,10 @@ class SuperheroCLI::API
     end
     puts 
   end
+  
+  def self.all
+    @@all 
+  end 
 
 end
   
