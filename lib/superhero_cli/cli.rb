@@ -15,10 +15,12 @@ class SuperheroCLI::CLI
       if input == "y"
         start
       elsif input == "n"
-        goodbye 
+        puts "Thanks for visiting the Superhero App!"
+        exit
       else
-        puts "I don't understand that answer. Please enter 'y', 'n', or 'exit."
-        input - gets.strip.downcase
+        puts "I don't understand that answer. Please enter 'y', 'n', or 'exit'."
+        input = gets.strip.downcase
+        start
       end
     end 
   end
@@ -30,10 +32,6 @@ class SuperheroCLI::CLI
       puts "#{index}. #{name}"
     end
     @input = gets.strip 
-  end 
-  
-  def goodbye
-   puts "Thank you for visiting the Superhero App!"
   end
   
 end
