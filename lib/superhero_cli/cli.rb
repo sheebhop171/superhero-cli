@@ -6,7 +6,8 @@ class SuperheroCLI::CLI
     puts "Welcome to the ultimate Superhero App!"
     if @input != "exit"
       superheroes_list 
-      api = SuperheroCLI::API.new(input)
+      SuperheroCLI::Superhero.new(input)
+      binding.pry
       api.get_superheroes 
       api.list_attributes
       
