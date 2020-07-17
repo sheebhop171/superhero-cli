@@ -8,8 +8,8 @@ class SuperheroCLI::CLI
       superheroes_list 
       SuperheroCLI::Superhero.new(input)
       binding.pry
-      api.get_superheroes 
-      api.list_attributes
+      SuperheroCLI::API.get_superhero_info 
+      list_attributes
       
     puts "Would you like to see another superhero? (y/n)"
       input = gets.strip.downcase

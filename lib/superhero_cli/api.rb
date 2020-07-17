@@ -1,12 +1,12 @@
 class SuperheroCLI::API
   
-  
+  attr_accessor :name, :powerstats, :full_name, :alter_egos, :place_of_birth, :occupation, :superhero
 
-  def get_superheroes
+  def get_super_info
     
     url = "https://superheroapi.com/api/10218887433359734/search/#{input}"
     response = HTTParty.get(url)
-    superhero = response["results"]
+    @superhero = response["results"]
     
     @name = superhero[0]["name"]
     @powerstats = superhero[0]["powerstats"]
