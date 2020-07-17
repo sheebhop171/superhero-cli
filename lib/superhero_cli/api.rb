@@ -31,8 +31,9 @@ class SuperheroCLI::API
     puts "Alter Egos: #{@alter_egos}"
     puts "Place of Birth: #{@place_of_birth}"
     puts "Occupation: #{@occupation}"
-    @powerstats.each do |stat| 
-    puts "#{stat}" 
+    puts "Powerstats: "
+    @powerstats.each do |key, value| 
+        puts " - #{key}: #{value}"
     end
     puts 
   end
