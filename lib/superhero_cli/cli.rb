@@ -34,4 +34,5 @@ class SuperheroCLI::CLI
     @input = gets.strip 
   end
   
+  
 end
