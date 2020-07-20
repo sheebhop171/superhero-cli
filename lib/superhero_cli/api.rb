@@ -1,10 +1,23 @@
 class SuperheroCLI::API
   
-  attr_accessor :name, :powerstats, :full_name, :alter_egos, :place_of_birth, :occupation, :superhero
+  attr_accessor :name, :powerstats, :full_name, :alter_egos, :place_of_birth, :occupation, :superhero, :input
+  
+  @@all = []
 
-  def get_super_info
+   def initialize(input)
+    @input = input
+    @name = name
+    @powerstats = powerstats
+    @full_name = full_name
+    @alter_egos = alter_egos
+    @place_of_birth = place_of_birth
+    @occupation = occupation
+    @@all << self
+  end
+  
+  def get_superhero_info
     
-    url = "https://superheroapi.com/api/10218887433359734/search/#{input}"
+    url = "https://superheroapi.com/api/10218887433359734/search/#{@input}"
     response = HTTParty.get(url)
     @superhero = response["results"]
     
@@ -15,7 +28,7 @@ class SuperheroCLI::API
     @place_of_birth = superhero[0]["biography"]["place-of-birth"]
     @occupation = superhero[0]["work"]["occupation"]
     
-  end 
+  end
     
   def list_attributes 
     puts "-----------Superhero Info-----------"
@@ -30,6 +43,11 @@ class SuperheroCLI::API
     end
     puts 
   end
+  
+  def self.all
+    @@all
+  end
+  
 
 end
   

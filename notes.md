@@ -33,5 +33,10 @@ User is asked for a superhero
 User enters superhero name
 User is returned API information for that superhero 
 
+show list of superheroes
+get input from user 
+take input from user and scrape API 
+display scraped API data to user for superhero 
+
 
 
