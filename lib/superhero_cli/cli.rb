@@ -6,7 +6,6 @@ class SuperheroCLI::CLI
     puts "Welcome to the ultimate Superhero App!"
     if @input != "exit"
       superheroes_list 
-      binding.pry
       api = SuperheroCLI::API.new(input)
       api.get_superhero_info 
       api.list_attributes
@@ -28,7 +27,7 @@ class SuperheroCLI::CLI
   
    def superheroes_list
     puts "Enter the name of the superhero you'd like to learn more about or enter 'exit'."
-    @superheroes = ["Aquaman", "Batgirl", "Batman", "Deadpool", "Firestorm", "Hulk", "Mystique", "Phoenix", "Spider-Man", "Thor", ]
+    @superheroes = ["Aquaman", "Batgirl", "Batman", "Deadpool", "Firestorm", "Hulk", "Maverick", "Mystique", "Phoenix", "Spider-Man"]
     @superheroes.each.with_index(1) do |name, index|
       puts "#{index}. #{name}"
     end
