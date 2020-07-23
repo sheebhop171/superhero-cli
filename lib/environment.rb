@@ -6,6 +6,7 @@ require_relative "./superhero_cli/superhero"
 require 'pry'
 require 'httparty'
 require 'json'
+require 'colorize'
 
 
 
