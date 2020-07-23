@@ -48,10 +48,10 @@ class SuperheroCLI::CLI
     puts "Alter Egos: #{input.alter_egos}"
     puts "Place of Birth: #{input.place_of_birth}"
     puts "Occupation: #{input.occupation}"
-    #puts "Powerstats: "
-   # @powerstats.each do |key, value|
-     #   puts " - #{key}: #{value}"
-   # end
+    puts "Powerstats: "
+    input.powerstats.each do |key, value|
+       puts " - #{key}: #{value}"
+    end
   end
 
   def menu
